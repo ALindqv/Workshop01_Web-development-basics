@@ -11,7 +11,13 @@
 </head>
 <body>
     <!-- TODO Task 3: Add navigation menu here -->
-    
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
     
     <!-- TODO Task 1: Add your main content here -->
     <!-- Use  h2, p, and img tags -->
@@ -22,7 +28,7 @@
             <h1 class="main-heading">Arttu Lindqvist</h1>
             <h2 class="sub-heading">Software Developer</h2>
             <p class="about-me"></p>
-            <img class="profile-pic" src="">
+            <img class="profile-pic" src="./assets/placeholder.png">
         </section>
         
         <!-- TODO Task 1 & 3: Add an about section -->
@@ -32,7 +38,15 @@
         
         <!-- TODO Task 4: Add contact form section here -->
         <section id="contact">
-            
+            <form class="contactForm">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="msg">Message</label>
+                <textarea id="msg" name="msg" required></textarea>
+                <input type="submit">
+            </form>
         </section>
     </main>
     

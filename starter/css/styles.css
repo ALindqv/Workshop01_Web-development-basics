@@ -7,91 +7,108 @@
 /* Reset and Base Styles */
 * {
     /* Add your reset styles here (margin, padding, box-sizing) */
-
+    padding: 5px;
 }
 
 body {
     /* Add body styles:  font-family, background-color, color, etc. */
-
+    background: #b57edcd9;
 }
 
 /* TODO Task 2: Style your headings */
 h1 {
-    
+    color: #D8B4E2;
+    font-size: medium;
 }
 
 h2 {
-    
+    color: aqua;
+    font-size: small;
 }
 
 /* TODO Task 2: Style your paragraphs */
 p {
-    
+    padding: 0;
 }
 
 /* TODO Task 2: Style your images */
 img {
-    
+    padding: 0;
 }
 
 /* TODO Task 3: Navigation Styles */
 nav {
-    
+    padding: 0%;
 }
 
 nav ul {
     /* Remove bullets and style the list */
+    list-style-type: none;
+    display: flex;
 }
 
 nav li {
     /* Display items horizontally */
+    
+    
 }
 
 nav a {
     /* Style the links */
+    text-decoration: none;
+    color: #8A2BE2;
 }
 
 nav a:hover {
     /* Add hover effect */
+    color: #8A2BE2;
 }
 
 /* Main Content Styles */
 main {
-    
+    padding: 0%;
 }
 
 section {
     /* Add spacing between sections */
+    padding: 0%;
 }
 
 /* TODO Task 4: Form Styles */
 form {
-    
+    display: flex;
+    flex-direction: column;
 }
 
 label {
-    
+    margin: 0%;
 }
 
 input,
 textarea {
     /* Style form inputs */
+    margin: 0%;
 }
 
 button,
 input[type="submit"] {
     /* Style the submit button */
+    margin: 0%;
 }
 
 button:hover,
-input[type="submit"]: hover {
+input[type="submit"] hover {
     /* Add hover effect for button */
+    margin: 0px;
 }
 
-/* Footer Styles */
+
+
+/* Footer Styles */ 
+/*
 footer {
     
-}
+}*/
 
 /* TODO Task 5: Media Queries for Responsive Design */
 /* Tablet styles (optional) */
