@@ -7,7 +7,8 @@
 /* Reset and Base Styles */
 * {
     /* Add your reset styles here (margin, padding, box-sizing) */
-    padding: 5px;
+    padding: 15px;
+    box-sizing: border-box;
 }
 
 body {
@@ -33,7 +34,9 @@ p {
 
 /* TODO Task 2: Style your images */
 img {
-    padding: 0;
+    max-width: 350px;
+    box-shadow: 0 0 2px 1px rgba(216, 180, 226, 0.25);
+    border-radius: 4.2px;
 }
 
 /* TODO Task 3: Navigation Styles */
@@ -93,7 +96,13 @@ textarea {
 button,
 input[type="submit"] {
     /* Style the submit button */
-    margin: 0%;
+    border: none;
+    border-radius: 1.5em 1.5em 1.5em 1.5em;
+    background-color: #B57EDC;
+    height: 100%;
+    min-width: 40px;
+    min-height: 20px;
+    cursor: pointer;
 }
 
 button:hover,
