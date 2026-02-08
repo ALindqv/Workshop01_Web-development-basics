@@ -7,41 +7,52 @@
 /* Reset and Base Styles */
 * {
     /* Add your reset styles here (margin, padding, box-sizing) */
-    padding: 15px;
+    padding: 2px;
     box-sizing: border-box;
+    margin: 10px;
 }
 
 body {
     /* Add body styles:  font-family, background-color, color, etc. */
-    background: #b57edcd9;
+    background: #B57EDC; 
 }
 
 /* TODO Task 2: Style your headings */
 h1 {
     color: #D8B4E2;
-    font-size: medium;
+    font-family: "Roboto", serif;
+    font-size: 35px;
 }
 
 h2 {
     color: aqua;
-    font-size: small;
+    font-size: 20px;
 }
 
 /* TODO Task 2: Style your paragraphs */
+
+#about {
+    max-width: 40%;
+}
+
 p {
-    padding: 0;
+    font-family: "Roboto", serif;
+    white-space: pre-line;
 }
 
 /* TODO Task 2: Style your images */
 img {
-    max-width: 350px;
-    box-shadow: 0 0 2px 1px rgba(216, 180, 226, 0.25);
-    border-radius: 4.2px;
+    max-width: 250px;
+    box-shadow: 0 0 2px 1px rgba(216, 180, 226, 0.8);
+    border-radius: 6.2px;
+    padding: 0;
+    margin: 0;
 }
 
 /* TODO Task 3: Navigation Styles */
 nav {
-    padding: 0%;
+    width: fit-content;
+    max-width: 100%;
 }
 
 nav ul {
@@ -52,8 +63,8 @@ nav ul {
 
 nav li {
     /* Display items horizontally */
-    
-    
+    padding: 10px;
+    background-color: #D8B4E2;
 }
 
 nav a {
@@ -64,17 +75,19 @@ nav a {
 
 nav a:hover {
     /* Add hover effect */
-    color: #8A2BE2;
+    color: #8e50c9;
 }
 
 /* Main Content Styles */
 main {
-    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
 
 section {
     /* Add spacing between sections */
-    padding: 0%;
 }
 
 /* TODO Task 4: Form Styles */
@@ -84,13 +97,19 @@ form {
 }
 
 label {
-    margin: 0%;
+    font-family: "Roboto", serif;
 }
 
 input,
 textarea {
     /* Style form inputs */
-    margin: 0%;
+    padding-left: 5px;
+    height: 30px;
+    border: 0px;
+    border-radius: 9px;
+    resize: vertical;
+    background-color: rgb(230, 230, 230);
+
 }
 
 button,
@@ -98,7 +117,7 @@ input[type="submit"] {
     /* Style the submit button */
     border: none;
     border-radius: 1.5em 1.5em 1.5em 1.5em;
-    background-color: #B57EDC;
+    background-color: #8151a3d9;
     height: 100%;
     min-width: 40px;
     min-height: 20px;
@@ -106,9 +125,9 @@ input[type="submit"] {
 }
 
 button:hover,
-input[type="submit"] hover {
+input[type="submit"]:hover {
     /* Add hover effect for button */
-    margin: 0px;
+    background-color: #9445ccd9;
 }
 
 
@@ -123,7 +142,19 @@ footer {
 /* Tablet styles (optional) */
 @media (max-width: 768px) {
     /* Add your tablet/mobile styles here */
+    * {
+        padding: 1px;
+        margin: 2px;
+        font-size-adjust: 0.4;
+    }
     
+    nav ul {
+        flex-direction: column;
+    }
+    
+    img {
+        max-width: 100%;
+    }
 }
 
 /* Mobile styles */
